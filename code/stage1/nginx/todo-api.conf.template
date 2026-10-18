@@ -1,0 +1,24 @@
+# NGINX site for the Stage 1 To-Do API. setup.sh fills in __API_ROOT__ and __FPM_SOCK__
+# and installs it as /etc/nginx/sites-available/todo-api (port 8080, so the default site on port 80 is untouched).
+# Pattern adapted from ase230 module1/code/5_Webserver_using_NGINX/nginx.conf.
+server {
+    listen 8080;
+    server_name localhost;
+    root __API_ROOT__;
+    index index.php;
+
+    # Static files (test.html) are served directly; everything else goes to the PHP front controller.
+    location / {
+        try_files $uri /index.php$is_args$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:__FPM_SOCK__;
+    }
+
+    # Never serve SQL files or other non-public files.
+    location ~* \.(sql|md)$ {
+        deny all;
+    }
+}
