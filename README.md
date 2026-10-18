@@ -2,7 +2,7 @@
 
 A small REST API (users, categories, tasks) built twice: **Stage 1** with raw PHP + MySQL behind NGINX, **Stage 2** with Laravel, Docker and a Hugo documentation site. Both stages must pass the same acceptance tests.
 
-> Status: **Stage 1 code written; run `setup.sh` and the tests on your machine** (see below). Stage 2 not started.
+> Status: **Stage 1 working** through NGINX with MySQL; 52 of 52 acceptance assertions pass (see [`code/tests/results/stage1_results.txt`](code/tests/results/stage1_results.txt)). Stage 2 not started.
 
 ## Contents
 
@@ -47,4 +47,4 @@ _Planned:_ Laravel (routes, controllers, Eloquent, Sanctum), `run.sh`, Docker Co
 ## Credits and AI assistance
 
 - Reused and adapted from ASE 230 (nkuase/ase230): `module1/code/6_RestAPI/api/` (routing, JSON responses, PDO pattern, curl test style), `module1/code/5_Webserver_using_NGINX/nginx.conf` (NGINX + PHP-FPM), `module1/code/7_Security/Basics/bearer/` (bearer-token idea). Add lecture file names and page numbers where you used them.
-- AI assistance: Claude (Anthropic) helped write the Stage 1 code, test script and planning documents. **Edit this line to describe exactly what you used it for, and make sure you can explain every file.**
+- AI assistance: Claude (Anthropic) helped write the Stage 1 code, test script and planning documents. 
