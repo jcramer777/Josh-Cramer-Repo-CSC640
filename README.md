@@ -2,6 +2,8 @@
 
 A small REST API (users, categories, tasks) built twice: **Stage 1** with raw PHP + MySQL behind NGINX, **Stage 2** with Laravel, Docker and a Hugo documentation site. Both stages must pass the same acceptance tests.
 
+> **Submitted version (HW4 Part 2): Stage 1**, directory `code/stage1/` (tag `stage1`). Stage 2 is added in `code/stage2/` later and does not change Stage 1.
+>
 > Status: **Stage 1 working** through NGINX with MySQL; 52 of 52 acceptance assertions pass (see [`code/tests/results/stage1_results.txt`](code/tests/results/stage1_results.txt)). Stage 2 not started.
 
 ## Contents
@@ -12,8 +14,9 @@ A small REST API (users, categories, tasks) built twice: **Stage 1** with raw PH
 | `code/stage1/` | Stage 1: PHP + MySQL + NGINX (`api/`, `nginx/`, `setup.sh`, `run.sh`, `reset_db.sh`) |
 | `code/tests/run_tests.sh` | Executable acceptance tests (shared by both stages) |
 | `code/tests/results/` | Saved test results per stage |
+| `presentation/stage1_tutorial.md` and `.pdf` | Stage 1 Marp tutorial: every endpoint with request and response examples |
 | `plan/` | HW1 proposal text, `HW4_plan_stage1.md`, `HW4_plan_stage2.md`, Part 1 checklist |
-| `presentation/` | Marp tutorial (Stage 1), Hugo site and `comparison.md` (Stage 2) |
+| `presentation/` | Marp tutorial (Stage 1); Hugo site and `comparison.md` (Stage 2, planned) |
 
 ## API (all under `/api`)
 
@@ -47,4 +50,4 @@ _Planned:_ Laravel (routes, controllers, Eloquent, Sanctum), `run.sh`, Docker Co
 ## Credits and AI assistance
 
 - Reused and adapted from ASE 230 (nkuase/ase230): `module1/code/6_RestAPI/api/` (routing, JSON responses, PDO pattern, curl test style), `module1/code/5_Webserver_using_NGINX/nginx.conf` (NGINX + PHP-FPM), `module1/code/7_Security/Basics/bearer/` (bearer-token idea). Add lecture file names and page numbers where you used them.
-- AI assistance: Claude (Anthropic) helped write the Stage 1 code, test script and planning documents. 
+- AI assistance: Claude (Anthropic) helped write the Stage 1 code, test script and planning documents. **Edit this line to describe exactly what you used it for, and make sure you can explain every file.**
