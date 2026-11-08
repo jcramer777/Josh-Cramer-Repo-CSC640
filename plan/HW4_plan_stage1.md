@@ -26,8 +26,8 @@ marp: true
 
 1. **What:** Part 1 files ready: `acceptance.md`, `HW4_plan_stage1.md`, `HW4_part1_checklist.md`, README skeleton, GitHub repository with `code/`, `presentation/`, `plan/`
 2. **When (Plan):** 11/2
-3. **When (Actual):** TBD
-4. **Comment:**
+3. **When (Actual):** 11/8
+4. **Comment:** Late. The code, acceptance tests and README were ready and pushed to GitHub by 11/3, but I did not submit the Part 1 files to Canvas until 11/8, one day after the 11/7 deadline.
 
 ---
 
@@ -53,8 +53,8 @@ marp: true
 
 1. **What:** HTML/JavaScript test page checked against every endpoint; Marp tutorial (Markdown and PDF) with request/response examples
 2. **When (Plan):** 11/5
-3. **When (Actual):** TBD
-4. **Comment:**
+3. **When (Actual):** 11/8
+4. **Comment:** Late. The Marp tutorial (Markdown and PDF) was pushed on 11/3, but I did not check the test page against every endpoint until 11/8 (all 10 endpoints, success and error results; screenshots in `code/tests/results/test_page/`).
 
 ---
 
