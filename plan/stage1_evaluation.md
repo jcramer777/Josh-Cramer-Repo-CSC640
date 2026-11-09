@@ -28,7 +28,7 @@ Self-score each row and link to evidence. Full credit requires the stated workin
 | Criterion | Points | Earned |
 |---|---:|---|
 | Milestones in `HW4_plan_stage1.md` were completed on or before their planned dates; score = 10 × milestones on time ÷ total milestones | 10 | [4/10] (2 of 5 milestones on time: M2, M3; see E8) |
-| Plan vs Actual dates were recorded and kept up to date throughout, and changes are explained | 10 | [7/10] (M1 to M4 recorded with comments; M5 not finished; the plan was written after M2 and M3 were done, which the plan says; see E8) |
+| Plan vs Actual dates were recorded and kept up to date throughout, and changes are explained | 10 | [7/10] (all five milestones have actual dates and comments; M1, M4 and M5 were late; the plan was written after M2 and M3 were done, which the plan says; see E8) |
 | **Total** | **20** | **[11/20]** |
 
 ---
@@ -83,7 +83,7 @@ Schedule scores are explained under E8. The test page was checked by hand in a b
 | E5 | Schema [`schema.sql`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/code/stage1/api/schema.sql), seed data [`seed.sql`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/code/stage1/api/seed.sql), setup [`setup.sh`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/code/stage1/setup.sh), PDO access in [`index.php`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/code/stage1/api/index.php) |
 | E6 | Tutorial: [`stage1_tutorial.md`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/presentation/stage1_tutorial.md) and [`stage1_tutorial.pdf`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/presentation/stage1_tutorial.pdf) |
 | E7 | [`README.md`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/README.md) names the submitted version (Stage 1) and links setup, run and test steps |
-| E8 | Schedule: [`HW4_plan_stage1.md`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/plan/HW4_plan_stage1.md). M1 (plan 11/2, actual 11/8) and M4 (plan 11/5, actual 11/8) were late; M2 and M3 (actual 10/17) were on time; M5 (plan 11/6) is not finished, so 2 of 5 were on time = 4 of 10. The plan was written on 11/2, after M2 and M3 were already done, and it says so. |
+| E8 | Schedule: [`HW4_plan_stage1.md`](https://github.com/Jcramer777/Josh-Cramer-Repo-CSC640/blob/main/plan/HW4_plan_stage1.md). M1 (plan 11/2, actual 11/8) and M4 (plan 11/5, actual 11/8) were late; M2 and M3 (actual 10/17) were on time; M5 (plan 11/6, actual 11/8) was also late, so 2 of 5 were on time = 4 of 10. The plan was written on 11/2, after M2 and M3 were already done, and it says so. |
 
 ---
 

@@ -15,8 +15,8 @@ marp: true
 ## Your HW4 Part 2 Submission Date
 
 1. **When (Plan):** 11/20
-2. **When (Actual):** TBD (record the actual completion date)
-3. **Comment:**
+2. **When (Actual):** 11/8
+3. **Comment:** Submitted `stage1_evaluation.md` and `HW4_plan_stage2.md` on Canvas on 11/8, well before the 11/21 deadline.
 
 ---
 
@@ -62,5 +62,5 @@ marp: true
 
 1. **What:** README links setup/run/test; self-evaluation `stage1_evaluation.md` filled in with evidence links; repo link and plan updated on the Canvas progress page; `peer-review.md` started
 2. **When (Plan):** 11/6
-3. **When (Actual):** TBD
-4. **Comment:**
+3. **When (Actual):** 11/8
+4. **Comment:** Late. The README links, the self-evaluation with evidence links and the repo link were done by 11/8, and I submitted `stage1_evaluation.md` and `HW4_plan_stage2.md` on Canvas and updated this plan on the Canvas progress page on 11/8. `peer-review.md` was moved to the Stage 2 plan (additional milestones), because the peer reviews can only be done after the Part 2 deadline.
