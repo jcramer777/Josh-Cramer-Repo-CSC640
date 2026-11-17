@@ -10,13 +10,13 @@ A small REST API (users, categories, tasks) built twice: **Stage 1** with raw PH
 
 | Path | What |
 |---|---|
-| `acceptance.md` | Success and failure cases for all 10 endpoints, including token cases |
-| `code/stage1/` | Stage 1: PHP + MySQL + NGINX (`api/`, `nginx/`, `setup.sh`, `run.sh`, `reset_db.sh`) |
-| `code/tests/run_tests.sh` | Executable acceptance tests (shared by both stages) |
-| `code/tests/results/` | Saved test results per stage; `test_page/` has screenshots of the HTML/JavaScript test page |
-| `presentation/stage1_tutorial.md` and `.pdf` | Stage 1 Marp tutorial: every endpoint with request and response examples |
-| `plan/` | `HW4_plan_stage1.md`, `HW4_plan_stage2.md` (Plan vs Actual dates), `stage1_evaluation.md` (self-evaluation), Part 1 checklist, HW1 proposal text; `evidence/` has the Laravel trial screenshots |
-| `presentation/` | Marp tutorial (Stage 1); Hugo site and `comparison.md` (Stage 2, planned) |
+| [`acceptance.md`](acceptance.md) | Success and failure cases for all 10 endpoints, including token cases |
+| [`code/stage1/`](code/stage1/) | Stage 1: PHP + MySQL + NGINX (`api/`, `nginx/`, `setup.sh`, `run.sh`, `reset_db.sh`) |
+| [`code/tests/run_tests.sh`](code/tests/run_tests.sh) | Executable acceptance tests (shared by both stages) |
+| [`code/tests/results/`](code/tests/results/) | Saved test results per stage; [`test_page/`](code/tests/results/test_page/) has screenshots of the HTML/JavaScript test page (11/8 and a re-run on 11/17, files named `2026-11-17_*`) |
+| [`presentation/stage1_tutorial.md`](presentation/stage1_tutorial.md) and [`.pdf`](presentation/stage1_tutorial.pdf) | Stage 1 Marp tutorial: every endpoint with request and response examples |
+| [`plan/`](plan/) | [`HW4_plan_stage1.md`](plan/HW4_plan_stage1.md), [`HW4_plan_stage2.md`](plan/HW4_plan_stage2.md) (Plan vs Actual dates), [`stage1_evaluation.md`](plan/stage1_evaluation.md) (self-evaluation), Part 1 checklist, HW1 proposal text; [`evidence/`](plan/evidence/) has the Laravel trial screenshots |
+| `presentation/` | Hugo site and `comparison.md` (Stage 2, planned) |
 
 ## API (all under `/api`)
 
@@ -45,7 +45,7 @@ STAGE=stage1 bash code/tests/run_tests.sh      # acceptance tests; exit code 0 =
 
 ## Stage 2
 
-_Planned:_ Laravel (routes, controllers, Eloquent, Sanctum), `run.sh`, Docker Compose with `setup.sh`, Hugo tutorial on GitHub Pages, GitHub Actions, and `comparison.md`.
+_Planned:_ Laravel (routes, controllers, Eloquent, Sanctum), `run.sh`, Docker Compose with `setup.sh`, Hugo tutorial on GitHub Pages, GitHub Actions, and `comparison.md`. Dates are in [`plan/HW4_plan_stage2.md`](plan/HW4_plan_stage2.md).
 
 ## Credits and AI assistance
 
@@ -57,6 +57,8 @@ _Planned:_ Laravel (routes, controllers, Eloquent, Sanctum), `run.sh`, Docker Co
 - `module1/code/7_Security/Basics/bearer/` for the bearer-token idea.
 - `module2/code/1_Laravel/5. Bearer Token APIs/` (`run1-5.sh`, `test1-5.sh`) for the Stage 2 Laravel trial only; no Stage 1 code comes from it.
 
+The To-Do domain (users, categories, tasks), the 10-endpoint contract and the acceptance tests are specific to this project; they are not the ASE 230 student API.
+
 **Related lecture slides** (ASE 230 `module1/pdf/`): the code above follows the topics of `5_Webserver_using_NGINX/2. Setting up NGINX for PHP.pdf`, `6_RestAPI/2. Building REST API Server with PHP and JSON.pdf`, `6_RestAPI/3. Connecting REST API Server to MySQL with PDO.pdf` and `6_RestAPI/4. Testing REST API Server.pdf`. I built from the course code files listed above, not from specific slide pages, so I cite no page numbers.
 
-**AI assistance:** Claude (Anthropic) wrote the first drafts of the Stage 1 code (`index.php`, SQL, NGINX config, scripts), the acceptance test script, the HTML test page, and the plan, tutorial and evaluation documents. I ran the setup, the 52 acceptance tests, the test page and the Laravel trial on my own machine (WSL2 Ubuntu, MySQL, NGINX), fixed the NGINX port 80 conflict there, and the scores in `plan/stage1_evaluation.md` come from those runs. The request and response examples in the Stage 1 tutorial were first captured against a test copy of the API that uses SQLite, then the real MySQL version was checked with the same acceptance tests (52 passed, 0 failed).
+**AI assistance:** Claude (Anthropic) wrote the first drafts of the Stage 1 code (`index.php`, SQL, NGINX config, scripts), the acceptance test script, the HTML test page, and the plan, tutorial and evaluation documents. I ran the setup, the 52 acceptance tests, the test page and the Laravel trial on my own machine (WSL2 Ubuntu, MySQL, NGINX) and fixed the NGINX port 80 conflict there. On 11/17 I re-ran the setup scripts, the acceptance tests (52 passed, 0 failed) and the test page myself, and saved dated screenshots in `code/tests/results/test_page/`. The request and response examples in the Stage 1 tutorial were first captured against a test copy of the API that uses SQLite, then the real MySQL version was checked with the same acceptance tests (52 passed, 0 failed).
