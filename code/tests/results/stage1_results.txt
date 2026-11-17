@@ -1,10 +1,10 @@
 Stage: stage1
 Command: STAGE=stage1 BASE_URL=http://localhost:8080 bash code/tests/run_tests.sh
-Date: 2026-10-17 22:13:36 EDT
+Date: 2026-11-17 11:40:23 EST
 ----------------------------------------------------------------
 PASS  R1  register: valid user (status 201)
 PASS  R1  register: valid user (success = true)
-PASS  R1  register: returns email (data.email = tester_1792289616_14844@example.com)
+PASS  R1  register: returns email (data.email = tester_1794933623_9779@example.com)
 PASS  R1  register: no password leaked (no 'password' in response)
 PASS  R2  register: duplicate email rejected (status 409)
 PASS  R3  register: missing fields rejected (status 400)
